@@ -24,6 +24,7 @@
       <% for(var i=0; i<foods.length; i++) { %>
       <li class="list-group-items">
       <h4 class="list-group-item-heading"><%= foods[i].name %></h4> <p class="list-group-item-text"><%= foods[i].yumminess %></p>
+      <button data-id="<%=foods[i].id%>" type="button" action="submit" class="close">delete</button>
       </li>
       <% } %>
     </ul>
